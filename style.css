@@ -1,52 +1,43 @@
+/* 全頁背景 */
 body {
-            margin: 0;
-            padding: 0;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            background: #fff0f5;
-            text-align: center;
-            color: #ff69b4;
-        }
-        h1 {
-            margin-top: 50px;
-            font-size: 48px;
-            text-shadow: 2px 2px #ffaeb9;
-        }
-        p {
-            font-size: 20px;
-            margin: 20px;
-        }
-        .images {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        .images div {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 50px;
-            background: #ffe4e1;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-        }
-        .message-board {
-            background-color: rgba(255, 182, 193, 0.8);
-            padding: 20px;
-            margin: 30px auto;
-            width: 60%;
-            border-radius: 15px;
-        }
-        .message-board ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .message-board li {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        audio {
-            margin-top: 20px;
-        }
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: #a8d0e6; /* 淡藍色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 容器置中 */
+.container {
+    text-align: center;
+}
+
+/* 標題風格 */
+.container h1 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* 托盤 */
+.tray {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-image: url('https://i.imgur.com/5N7fH3W.png'); /* 示意托盤圖片 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/* 餐點圓圈 */
+.food {
+    width: 60px;
+    height: 60px;
+    background-color: #f7a072; /* 暫時顏色示意 */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px;
+}
