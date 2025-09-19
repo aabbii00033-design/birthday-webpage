@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>生日快樂，我親愛的 BB！</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            background: #fff0f5;
+            text-align: center;
+            color: #ff69b4;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 48px;
+            text-shadow: 2px 2px #ffaeb9;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .images div {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            background: #ffe4e1;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+        }
+        .message-board {
+            background-color: rgba(255, 182, 193, 0.8);
+            padding: 20px;
+            margin: 30px auto;
+            width: 60%;
+            border-radius: 15px;
+        }
+        .message-board ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .message-board li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>生日快樂，我親愛的 BB！</h1>
+    <p>歡迎來到我的小網頁～🎂🍬✨</p>
+
+    <div class="images">
+        <div>🎂</div>
+        <div>🍬</div>
+        <div>🫧</div>
+    </div>
+
+    <div class="message-board">
+        <h2>留言區</h2>
+        <ul>
+            <li>小明：祝你生日快樂！🎉</li>
+            <li>小紅：蛋糕好漂亮！🍰</li>
+            <li>小藍：希望你每天都開心！🌸</li>
+        </ul>
+    </div>
+
+    <audio controls autoplay loop>
+        <source src="monday.mp3" type="audio/mpeg">
+        你的瀏覽器不支援音樂播放。
+    </audio>
+</body>
+</html>
