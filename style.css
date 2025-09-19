@@ -1,20 +1,17 @@
-/* 全頁背景 */
 body {
     margin: 0;
     font-family: 'Noto Sans TC', sans-serif;
-    background-color: #a8d0e6; /* 淡藍色 */
+    background-color: #a8d0e6; /* 暫時背景色 */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* 容器置中 */
 .container {
     text-align: center;
 }
 
-/* 標題風格 */
 .container h1 {
     margin-bottom: 40px;
     font-size: 2.5rem;
@@ -32,12 +29,23 @@ body {
     margin: 0 auto;
 }
 
-/* 餐點圓圈 */
+/* 餐點圓圈樣式 */
 .food {
+    position: absolute;
     width: 60px;
     height: 60px;
-    background-color: #f7a072; /* 暫時顏色示意 */
+    background-color: #f7a072;
     border-radius: 50%;
-    display: inline-block;
-    margin: 20px;
+    display: block;
+    transition: transform 0.2s;
 }
+
+.food:hover {
+    transform: scale(1.2);
+}
+
+/* 四個餐點位置 */
+.food1 { top: 20px; left: 20px; }
+.food2 { top: 20px; right: 20px; }
+.food3 { bottom: 20px; left: 20px; }
+.food4 { bottom: 20px; right: 20px; }
