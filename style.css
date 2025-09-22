@@ -20,12 +20,15 @@ body {
   transform: translate(-50%, -50%) scale(1.2); /* 中心點置中 + 整體放大 120% */
   width: 900px;             /* 托盤原始寬度 */
   z-index: 999;              /* 確保在最上層 */
+  /* 新增：相對定位，讓子元素商標絕對定位相對於托盤 */
+  display: inline-block;     /* 保持內容大小跟圖片一致 */
+}
 }
 /* 托盤上的盤子商標 */
 .tray-logo {
   position: absolute;       /* 相對於托盤定位 */
-  bottom: 10px;             /* 距離托盤底部 10px，可調整 */
-  right: 10px;              /* 距離托盤右側 10px，可調整 */
+  bottom: 0px;             /* 距離托盤底部 10px，可調整 */
+  right: 0px;              /* 距離托盤右側 10px，可調整 */
   width: 100px;             /* 商標大小，可依需要調整 */
   height: auto;             /* 保持比例 */
   z-index: 1000;            /* 確保在托盤上方 */
