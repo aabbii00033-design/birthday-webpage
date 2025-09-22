@@ -1,4 +1,4 @@
-body {
+<body>
   background-image: url("images/background.png");
   background-size: cover;       /* 圖片鋪滿 */
   background-repeat: no-repeat; /* 不重複 */
@@ -28,4 +28,4 @@ body {
   height: auto;
   z-index: 1000;
 }
-body}
+</body>
