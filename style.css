@@ -28,28 +28,26 @@ body {
     height: auto;
 }
 
-/* 左上角奶昔圖片 */
+/* 左上角奶昔圖片 - 位置不變 */
 .milkshake-image {
     position: absolute;
     top: 0;
     left: 0;
-    /* 調整 transform 讓奶昔重疊在左上角，可以根據實際效果調整數值 */
     transform: translate(-10%, -10%); 
-    width: 20%; /* 調整奶昔圖片大小，相對於托盤容器的寬度 */
+    width: 20%; 
     height: auto;
     z-index: 10;
 }
 
-/* 右下角商標圖片 */
+/* 右下角商標圖片 - 現在移到畫面中間，獨立於托盤 */
 .logo-image {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    /* 調整 transform 讓商標重疊在右下角 */
-    transform: translate(10%, 10%);
-    width: 20%; 
-    height: auto;
-    z-index: 10;
+    position: fixed; /* 改為 fixed，直接相對於視窗定位 */
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 精確居中 */
+    width: 60px; /* 設定寬度為 60px */
+    height: auto; /* 高度自動，保持圖片比例 */
+    z-index: 20; /* 確保它在所有圖片之上 */
 }
 
 .page-content {
