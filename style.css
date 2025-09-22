@@ -28,4 +28,5 @@ body {
   bottom: 0;
   right: 0;
   width: 80px; /* 依需要調整大小 */
+   z-index: 2;  /* 商標在上 */
 }
