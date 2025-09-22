@@ -5,7 +5,6 @@ body {
   background-attachment: fixed; /* 捲動時固定 */
   background-position: center;  /* 置中 */
 }
-
 /* 托盤 */
 .container {
   position: relative;
@@ -15,8 +14,8 @@ body {
 
 .tray {
   position: absolute;
-  top: 50%;   /* 畫面上方三分之二 */
+  top: 50%;   /* 垂直置中 */
   left: 50%;  /* 水平置中 */
-  transform: translateX(-50%);
-  width: 1000px; /* 可依需要調整托盤大小 */
+  transform: translate(-50%, -50%); /* 修正：垂直水平都置中 */
+  width: 1000px; /* 托盤寬度 */
 }
