@@ -5,35 +5,26 @@ body {
   background-attachment: fixed; /* 捲動時固定 */
   background-position: center;  /* 置中 */
 }
-/* 托盤 */
-.container {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* 佔滿整個瀏覽器畫面 */
-  /* 托盤上的商標 */
-.tray-logo {
-    position: absolute; /* 絕對定位 */
-    bottom: 10px;      /* 調整您希望的垂直位置 */
-    right: 10px;       /* 調整您希望的水平位置 */
+.tray-container {
+  position: fixed;             /* 固定在畫面上 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2); /* 中心 + 放大 */
+  width: 900px;               /* 托盤大小 */
+  z-index: 999;
 }
-}
-/* 托盤 */
+
 .tray {
-  position: fixed;           /* 固定在畫面上 */
-  top: 50%;                  /* 垂直置中 */
-  left: 50%;                 /* 水平置中 */
-  transform: translate(-50%, -50%) scale(1.2); /* 中心點置中 + 整體放大 120% */
-  width: 900px;             /* 托盤原始寬度 */
-  z-index: 999;              /* 確保在最上層 */
-  /* 新增：相對定位，讓子元素商標絕對定位相對於托盤 */
-  display: inline-block;     /* 保持內容大小跟圖片一致 */
+  width: 100%;                /* 填滿容器 */
+  height: auto;
+  display: block;
 }
-/* 托盤上的盤子商標 */
+
 .tray-logo {
-  position: absolute;      /* 設定為絕對定位，相對於父層 .tray */
-  bottom: 10px;            /* 距離 .tray 底部 10px (您可以自行調整) */
-  right: 10px;             /* 【已修正】距離 .tray 右側 10px (您可以自行調整) */
-  width: 100px;            /* 商標寬度 (您可以自行調整) */
-  height: auto;            /* 高度自動，以維持圖片比例 */
-  z-index: 1000;           /* 確保商標在托盤圖片的上方 */
+  position: absolute;         /* 絕對定位，相對於 .tray-container */
+  bottom: 10px;               /* 右下角距離，可調整 */
+  right: 10px;
+  width: 100px;
+  height: auto;
+  z-index: 1000;
 }
