@@ -7,19 +7,18 @@ body {
   overflow: hidden;
 }
 
-/* 托盤容器：固定在正中間，並成為商標定位基準 */
+/* 托盤容器：固定在正中間 */
 .tray-container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  position: relative; /* 關鍵！讓 logo 跟著托盤 */
 }
 
 /* 托盤圖片 */
 .tray {
   display: block;
-  width: 400px; /* 可調整大小 */
+  width: 600px; /* 調整托盤圖片大小至 600px */
   height: auto;
 }
 
@@ -28,6 +27,6 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 220px; /* 調整大小 */
+  width: 220px; /* 維持商標大小 */
   height: auto;
 }
