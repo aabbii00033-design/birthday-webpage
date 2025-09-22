@@ -14,19 +14,3 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* 托盤圖片 */
-.tray {
-  display: block;
-  width: 600px; /* 調整托盤圖片大小至 600px */
-  height: auto;
-}
-
-/* 商標 疊在托盤右下角 */
-.logo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 220px; /* 維持商標大小 */
-  height: auto;
-}
