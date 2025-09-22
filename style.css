@@ -13,6 +13,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: relative; /* 關鍵：讓它成為商標的定位參考點 */
 }
 
 /* 托盤圖片 */
