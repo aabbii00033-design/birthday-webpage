@@ -39,15 +39,15 @@ body {
     z-index: 10;
 }
 
-/* 右下角商標圖片 - 現在移到畫面中間，獨立於托盤 */
+/* 商標圖片 - 固定在畫面正中央，大小 60px */
 .logo-image {
-    position: fixed; /* 改為 fixed，直接相對於視窗定位 */
-    top: 50%; /* 垂直居中 */
-    left: 50%; /* 水平居中 */
-    transform: translate(-50%, -50%); /* 精確居中 */
-    width: 60px; /* 設定寬度為 60px */
-    height: auto; /* 高度自動，保持圖片比例 */
-    z-index: 20; /* 確保它在所有圖片之上 */
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: auto;
+    z-index: 20; 
 }
 
 .page-content {
