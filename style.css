@@ -12,10 +12,12 @@ body {
   height: 100vh; /* 佔滿整個瀏覽器畫面 */
 }
 
+/* 托盤 */
 .tray {
-  position: absolute;
-  top: 50%;   /* 垂直置中 */
-  left: 50%;  /* 水平置中 */
-  transform: translate(-50%, -50%); /* 修正：垂直水平都置中 */
-  width: 1200px; /* 托盤寬度 */
+  position: fixed;           /* 固定在畫面上 */
+  top: 50%;                  /* 垂直置中 */
+  left: 50%;                 /* 水平置中 */
+  transform: translate(-50%, -50%) scale(1.2); /* 中心點置中 + 整體放大 120% */
+  width: 1000px;             /* 托盤原始寬度 */
+  z-index: 999;              /* 確保在最上層 */
 }
