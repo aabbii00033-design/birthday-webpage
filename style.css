@@ -23,14 +23,3 @@ body {
   position: relative;
   z-index: 1;
 }
-
-/* 商標 疊在托盤右下角 */
-.logo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 650px;  /* 商標大小，可自行調整 */
-  height: auto;
-  z-index: 2;
-}
-
