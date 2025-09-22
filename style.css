@@ -9,11 +9,12 @@ body {
 
 /* 托盤置中 */
 .tray-container {
-  position: fixed;
+  position: fixed; /* 或你可以改成 position: relative; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: relative; /* 關鍵：讓它成為商標的定位參考點 */
+}
 }
 
 /* 托盤圖片 */
@@ -29,5 +30,5 @@ body {
   bottom: 0;
   right: 0;
   width: 80px; /* 依需要調整大小 */
-   z-index: 2;  /* 商標在上 */
+  z-index: 2; /* 商標在上 */
 }
