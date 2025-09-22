@@ -26,10 +26,10 @@ body {
 }
 /* 托盤上的盤子商標 */
 .tray-logo {
-  position: absolute;       /* 相對於托盤定位 */
-  bottom: 0px;             /* 距離托盤底部 10px，可調整 */
-  right: -40px;              /* 距離托盤右側 10px，可調整 */
-  width: 100px;             /* 商標大小，可依需要調整 */
-  height: auto;             /* 保持比例 */
-  z-index: 1000;            /* 確保在托盤上方 */
+  position: absolute;      /* 設定為絕對定位，相對於父層 .tray */
+  bottom: 10px;            /* 距離 .tray 底部 10px (您可以自行調整) */
+  right: 10px;             /* 【已修正】距離 .tray 右側 10px (您可以自行調整) */
+  width: 100px;            /* 商標寬度 (您可以自行調整) */
+  height: auto;            /* 高度自動，以維持圖片比例 */
+  z-index: 1000;           /* 確保商標在托盤圖片的上方 */
 }
