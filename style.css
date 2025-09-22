@@ -1,34 +1,46 @@
-/* 背景圖鋪滿整頁，固定不動 */
 body {
-  margin: 0;
-  height: 100vh;
-  background: url("images/background.png") no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden; /* 防止捲動 */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
-/* 托盤置中 */
+.fixed-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* 讓容器不阻擋下方內容的點擊 */
+}
+
 .tray-container {
-  position: fixed; /* 或你可以改成 position: relative; */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: relative; /* 關鍵：讓它成為商標的定位參考點 */
-}
+    position: relative;
+    width: auto;
+    height: auto;
 }
 
-/* 托盤圖片 */
-.tray {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.tray-image {
+    display: block;
+    max-width: 90vw; /* 讓圖片在不同裝置上能適應大小 */
+    max-height: 90vh;
 }
 
-/* 商標疊在托盤右下角 */
-.logo {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 80px; /* 依需要調整大小 */
-  z-index: 2; /* 商標在上 */
+.logo-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 30%); /* 微調商標位置，讓它看起來更重疊在右下角 */
+    width: 20%; /* 調整商標大小 */
+    height: auto;
+}
+
+.page-content {
+    padding-top: 100vh; /* 增加內容高度，使頁面可滑動 */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #333;
 }
