@@ -10,14 +10,13 @@ body {
   position: relative;
   width: 100%;
   height: 100vh; /* 佔滿整個瀏覽器畫面 */
-}
-/* 托盤上的商標 */
+  /* 托盤上的商標 */
 .tray-logo {
     position: absolute; /* 絕對定位 */
     bottom: 10px;      /* 調整您希望的垂直位置 */
     right: 10px;       /* 調整您希望的水平位置 */
 }
-
+}
 /* 托盤 */
 .tray {
   position: fixed;           /* 固定在畫面上 */
