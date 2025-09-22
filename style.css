@@ -19,7 +19,7 @@ body {
 /* 托盤圖片 */
 .tray {
   display: block;
-  width: 850px; /* 可調整大小 */
+  width: 600px; /* 可調整大小 */
   height: auto;
 }
 
@@ -28,6 +28,6 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 500px; /* 調整大小 */
+  width: 220px; /* 調整大小 */
   height: auto;
 }
