@@ -14,39 +14,49 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* 移除 pointer-events: none; 以免影響商標的顯示或互動 */
 }
 
 .tray-container {
     position: relative;
-    /* 讓托盤容器的大小由其內容決定，並限制最大寬高 */
     max-width: 90vw; 
     max-height: 90vh;
 }
 
 .tray-image {
     display: block;
-    width: 100%; /* 讓托盤圖片填滿其容器 */
+    width: 100%; 
     height: auto;
 }
 
+/* 左上角奶昔圖片 */
+.milkshake-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 調整 transform 讓奶昔重疊在左上角，可以根據實際效果調整數值 */
+    transform: translate(-10%, -10%); 
+    width: 20%; /* 調整奶昔圖片大小，相對於托盤容器的寬度 */
+    height: auto;
+    z-index: 10;
+}
+
+/* 右下角商標圖片 */
 .logo-image {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* 調整 transform 讓商標重疊在右下角，可以根據實際效果調整數值 */
-    /* 這裡使用負值讓它稍微往內移，如果想讓一部分超出邊緣，可以再調整 */
-    transform: translate(10%, 10%); /* 根據商標大小和托盤邊緣調整 */
-    width: 20%; /* 調整商標大小，相對於托盤容器的寬度 */
+    /* 調整 transform 讓商標重疊在右下角 */
+    transform: translate(10%, 10%);
+    width: 20%; 
     height: auto;
-    z-index: 10; /* 確保商標在托盤圖片之上 */
+    z-index: 10;
 }
 
 .page-content {
-    padding-top: 100vh; /* 增加內容高度，使頁面可滑動 */
+    padding-top: 100vh; 
     padding-bottom: 50px;
     text-align: center;
     color: #333;
-    position: relative; /* 確保內容不會被 fixed 元素完全覆蓋 */
-    z-index: 1; /* 讓內容層級低於 fixed 圖片 */
+    position: relative; 
+    z-index: 1;
 }
