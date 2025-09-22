@@ -28,7 +28,7 @@ body {
 .tray-logo {
   position: absolute;       /* 相對於托盤定位 */
   bottom: 0px;             /* 距離托盤底部 10px，可調整 */
-  right: 0px;              /* 距離托盤右側 10px，可調整 */
+  right: -40px;              /* 距離托盤右側 10px，可調整 */
   width: 100px;             /* 商標大小，可依需要調整 */
   height: auto;             /* 保持比例 */
   z-index: 1000;            /* 確保在托盤上方 */
