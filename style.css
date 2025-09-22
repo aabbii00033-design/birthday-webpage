@@ -1,10 +1,11 @@
-<body>
+body {
   background-image: url("images/background.png");
   background-size: cover;       /* 圖片鋪滿 */
   background-repeat: no-repeat; /* 不重複 */
   background-attachment: fixed; /* 捲動時固定 */
   background-position: center;  /* 置中 */
 }
+
 .tray-container {
   position: fixed;             /* 固定在畫面上 */
   top: 50%;
@@ -28,4 +29,3 @@
   height: auto;
   z-index: 1000;
 }
-</body>
