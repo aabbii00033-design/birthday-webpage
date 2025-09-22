@@ -14,28 +14,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none; /* 讓容器不阻擋下方內容的點擊 */
+    /* 移除 pointer-events: none; 以免影響商標的顯示或互動 */
 }
 
 .tray-container {
     position: relative;
-    width: auto;
-    height: auto;
+    /* 讓托盤容器的大小由其內容決定，並限制最大寬高 */
+    max-width: 90vw; 
+    max-height: 90vh;
 }
 
 .tray-image {
     display: block;
-    max-width: 90vw; /* 讓圖片在不同裝置上能適應大小 */
-    max-height: 90vh;
+    width: 100%; /* 讓托盤圖片填滿其容器 */
+    height: auto;
 }
 
 .logo-image {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(30%, 30%); /* 微調商標位置，讓它看起來更重疊在右下角 */
-    width: 20%; /* 調整商標大小 */
+    /* 調整 transform 讓商標重疊在右下角，可以根據實際效果調整數值 */
+    /* 這裡使用負值讓它稍微往內移，如果想讓一部分超出邊緣，可以再調整 */
+    transform: translate(10%, 10%); /* 根據商標大小和托盤邊緣調整 */
+    width: 20%; /* 調整商標大小，相對於托盤容器的寬度 */
     height: auto;
+    z-index: 10; /* 確保商標在托盤圖片之上 */
 }
 
 .page-content {
@@ -43,4 +47,6 @@ body {
     padding-bottom: 50px;
     text-align: center;
     color: #333;
+    position: relative; /* 確保內容不會被 fixed 元素完全覆蓋 */
+    z-index: 1; /* 讓內容層級低於 fixed 圖片 */
 }
