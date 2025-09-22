@@ -18,7 +18,7 @@ body {
 /* 托盤圖片 */
 .tray {
   display: block;
-  max-width: 400px;  /* 可調整大小 */
+  max-width: 800px;  /* 可調整大小 */
   height: auto;
   position: relative;
   z-index: 1;
