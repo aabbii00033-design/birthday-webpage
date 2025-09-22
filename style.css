@@ -1,25 +1,33 @@
-/* 背景鋪滿頁面，固定不動 */
+/* 背景鋪滿頁面 */
 body {
   margin: 0;
   height: 100vh;
   background: url("images/background.png") no-repeat center center fixed;
   background-size: cover;
-  overflow: hidden; /* 防止出現捲軸 */
+  overflow: hidden;
 }
 
-/* 托盤置中，固定不動 */
+/* 托盤容器：固定在正中間，並成為商標定位基準 */
 .tray-container {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  position: relative; /* 關鍵！讓 logo 跟著托盤 */
 }
 
 /* 托盤圖片 */
 .tray {
   display: block;
-  max-width: 800px;  /* 可調整大小 */
+  width: 850px; /* 可調整大小 */
   height: auto;
-  position: relative;
-  z-index: 1;
+}
+
+/* 商標 疊在托盤右下角 */
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px; /* 調整大小 */
+  height: auto;
 }
