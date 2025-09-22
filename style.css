@@ -18,5 +18,5 @@ body {
   top: 50%;   /* 畫面上方三分之二 */
   left: 50%;  /* 水平置中 */
   transform: translateX(-50%);
-  width: 400px; /* 可依需要調整托盤大小 */
+  width: 1000px; /* 可依需要調整托盤大小 */
 }
