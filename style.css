@@ -1,31 +1,31 @@
+/* 背景圖鋪滿整頁，固定不動 */
 body {
-  background-image: url("images/background.png");
-  background-size: cover;       /* 圖片鋪滿 */
-  background-repeat: no-repeat; /* 不重複 */
-  background-attachment: fixed; /* 捲動時固定 */
-  background-position: center;  /* 置中 */
+  margin: 0;
+  height: 100vh;
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden; /* 防止捲動 */
 }
 
+/* 托盤置中 */
 .tray-container {
-  position: fixed;             /* 固定在畫面上 */
+  position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.2); /* 中心 + 放大 */
-  width: 900px;               /* 托盤大小 */
-  z-index: 999;
+  transform: translate(-50%, -50%);
 }
 
+/* 托盤圖片 */
 .tray {
-  width: 100%;                /* 填滿容器 */
-  height: auto;
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-.tray-logo {
-  position: absolute;         /* 絕對定位，相對於 .tray-container */
-  bottom: 10px;               /* 右下角距離，可調整 */
-  right: 10px;
-  width: 100px;
-  height: auto;
-  z-index: 1000;
+/* 商標疊在托盤右下角 */
+.logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px; /* 依需要調整大小 */
 }
