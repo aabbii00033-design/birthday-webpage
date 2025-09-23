@@ -29,13 +29,14 @@ body {
   height: auto;
   display: block;
   margin: 20px auto 0;     /* 上方距離托盤 10px，可調整 */
+  z-index: 1; 
 }
 
 .logo {
   position: fixed;   /* 固定位置，不隨滾動 */
   top: 10%;            /* 貼齊上方 */
   left: 10%;          /* 貼齊右側 */
-  width: 500px;      /* 固定寬度 */
+  width: 650px;      /* 固定寬度 */
   height: auto;      /* 保持比例 */
   z-index: 1;     /* 確保在背景上方 */
 }
