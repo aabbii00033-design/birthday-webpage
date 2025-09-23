@@ -35,8 +35,8 @@ body {
 .logo {
   position: fixed;   /* 固定位置，不隨滾動 */
   top: 10%;            /* 貼齊上方 */
-  left: 10%;          /* 貼齊右側 */
-  width: 650px;      /* 固定寬度 */
+  left: 30%;          /* 貼齊右側 */
+  width: 900px;      /* 固定寬度 */
   height: auto;      /* 保持比例 */
   z-index: 1;     /* 確保在背景上方 */
 }
