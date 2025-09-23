@@ -6,10 +6,6 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-body {
-  margin: 0; /* 清掉預設空白 */
-}
-
 .tray {
   position: fixed;            /* 固定在螢幕，不會隨頁面滾動 */
   top: 50%;                   /* 往下 50% */
