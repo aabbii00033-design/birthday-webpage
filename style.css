@@ -13,5 +13,7 @@ body {
   transform: translate(-50%, -50%); /* 讓圖片中心點對準螢幕中心 */
   width: 600px;               /* 固定寬度 */
   height: auto;               /* 高度自動，保持比例 */
-  z-index: 999;               /* 在最上層 */
+  z-index: 1;               /* 在最上層 */
 }
+.logo {
+  
