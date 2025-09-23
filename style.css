@@ -16,6 +16,7 @@ body {
   z-index: 1;               /* 在最上層 */
 }
 .text {
+  bottom: 20px; 
   width: 700px;            /* 文字圖片大小 */
   height: auto;
   display: block;
