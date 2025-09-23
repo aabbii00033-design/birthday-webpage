@@ -6,3 +6,16 @@ body {
   background-size: cover;
   overflow: hidden;
 }
+body {
+  margin: 0; /* 清掉預設空白 */
+}
+
+.tray {
+  position: fixed;            /* 固定在螢幕，不會隨頁面滾動 */
+  top: 50%;                   /* 往下 50% */
+  left: 50%;                  /* 往右 50% */
+  transform: translate(-50%, -50%); /* 讓圖片中心點對準螢幕中心 */
+  width: 600px;               /* 固定寬度 */
+  height: auto;               /* 高度自動，保持比例 */
+  z-index: 999;               /* 在最上層 */
+}
