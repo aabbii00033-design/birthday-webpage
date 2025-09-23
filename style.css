@@ -6,15 +6,6 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-/* 包裹托盤和文字圖片 */
-.tray-wrapper {
-  position: fixed;          /* 固定在螢幕，不隨滾動 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;       /* 讓文字圖片置中 */
-  z-index: 1;
-}
 .tray {
   position: fixed;            /* 固定在螢幕，不會隨頁面滾動 */
   top: 50%;                   /* 往下 50% */
