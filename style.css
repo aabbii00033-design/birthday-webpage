@@ -20,7 +20,7 @@ body {
   height: auto;
   display: block;
   margin: 40px auto 0;     /* 上方距離托盤 10px，可調整 */
-  z-index: 2; 
+  z-index: 5; 
 }
 
 .logo {
