@@ -43,10 +43,10 @@ body {
 }
 .logo2 {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 150%;
+  left: 150%;
   transform: translate(350px, 200px); /* 相對托盤中心偏移 */
-  width: 200px;
+  width: 700px;
   height: auto;
 }
 
