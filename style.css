@@ -56,8 +56,8 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-450px, 225px);
-  width: 200px;   /* 大小可調 */
+  transform: translate(calc(-450px + 35px), 225px);
+  width: 500px;   /* 大小可調 */
   height: auto;
   z-index: 10;
 }
@@ -66,8 +66,8 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-450px, -225px); /* 左上 */
-  width: 200px;
+  transform: translate(calc(-450px + 35px), -225px); /* 左上 */
+  width: 500px;
   height: auto;
   z-index: 10;
 }
