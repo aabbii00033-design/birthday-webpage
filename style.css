@@ -33,12 +33,3 @@ body {
   height: auto;
   z-index: 1;
 }
-
-.logo1 {
-  position: fixed;
-  top: 15px;
-  right: 25px;
-  width: 700px;
-  height: auto;
-  z-index: 2;
-}
