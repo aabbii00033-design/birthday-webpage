@@ -18,9 +18,9 @@ body {
 }
 .text {
   position: fixed;
-  top: calc(70% + 450px);  /* 托盤中心點往下再移一段距離 */
+  top: calc(70% + 100px);  /* 托盤中心點往下再移一段距離 */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-10%);
   width: 700px;
   height: auto;
   z-index: 10;
