@@ -33,11 +33,12 @@ body {
   height: auto;
   z-index: 1;
 }
+/* 新登場 */
 .logo1 { 
   position: fixed; /* 固定在螢幕 */ 
   top: 35px; /* 離上方 15px */ 
-  right: 315px; /* 離右方 15px */ 
-  width: 860px; /* 固定大小 */ 
+  right: 305px; /* 離右方 15px */ 
+  width: 900px; /* 固定大小 */ 
   height: auto; /* 保持比例 */ 
   z-index: 2; /* 保證疊在背景上 */ 
 }
@@ -54,7 +55,7 @@ body {
 .logo3 {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 20%;
   transform: translate(-450px, 150px);
   width: 900px;   /* 大小可調 */
   height: auto;
