@@ -8,19 +8,23 @@ body {
 }
 
 .tray {
-  width: 900px;                 /* 托盤大小 */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* 真正置中 */
+  width: 900px;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  z-index: 1;
 }
-
 .text {
-  width: 700px;                 /* 文字大小 */
+  position: fixed;
+  top: calc(50% + 450px);  /* 托盤中心點往下再移一段距離 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
   height: auto;
-  display: block;
-  margin: 10px auto 0;          /* 與托盤距離 10px，可調整 */
+  z-index: 1;
 }
-
 .logo {
   position: fixed;
   top: 10%;
