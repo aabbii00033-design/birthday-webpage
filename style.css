@@ -7,16 +7,6 @@ body {
   overflow: hidden;
 }
 
-/* 托盤 + 文字包裝 */
-.tray-wrapper {
-  position: fixed;              /* 固定在螢幕中間 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;           /* 讓底下的文字置中 */
-  z-index: 1;
-}
-
 .tray {
   width: 900px;                 /* 托盤大小 */
   height: auto;
