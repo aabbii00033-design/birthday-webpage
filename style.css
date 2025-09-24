@@ -50,22 +50,23 @@ body {
   height: auto;
   z-index: 10;
 }
-/* 托盤右下角 */
+/* 鬆餅 */
 .logo3 {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(200px, 150px);
-  width: 100px;   /* 大小可調 */
+  transform: translate(-450px, 150px);
+  width: 900px;   /* 大小可調 */
   height: auto;
   z-index: 10;
 }
+/* 奶昔 */
 .logo4 {
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 200%;
   transform: translate(-450px, -225px); /* 左上 */
-  width: 200px;
+  width: 900px;
   height: auto;
   z-index: 10;
 }
