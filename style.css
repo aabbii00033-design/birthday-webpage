@@ -41,3 +41,12 @@ body {
   height: auto; /* 保持比例 */ 
   z-index: 2; /* 保證疊在背景上 */ 
 }
+.logo2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(350px, 200px); /* 相對托盤中心偏移 */
+  width: 200px;
+  height: auto;
+}
+
