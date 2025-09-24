@@ -6,39 +6,45 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-.tray {
-  position: fixed;            /* 固定在螢幕，不會隨頁面滾動 */
-  top: 50%;                   /* 往下 50% */
-  left: 50%;                  /* 往右 50% */
-  transform: translate(-50%, -50%); /* 讓圖片中心點對準螢幕中心 */
-  width: 900px;               /* 固定寬度 */
-  height: auto;               /* 高度自動，保持比例 */
-  z-index: 1;               /* 在最上層 */
-}
-.text {
-  position: fixed;       /* 一定要加，不然 bottom 不會生效 */
-  bottom: 20px;          /* 離底部 20px */
-  left: 50%;             /* 水平置中 */
-  transform: translateX(-50%);
-  width: 700px;          /* 固定大小 */
-  height: auto;
-  z-index: 5;            /* 疊在托盤之上 */
-}
-.logo {
-  position: fixed;   /* 固定位置，不隨滾動 */
-  top: 10%;            /* 貼齊上方 */
-  left: 30%;          /* 貼齊右側 */
-  width: 900px;      /* 固定寬度 */
-  height: auto;      /* 保持比例 */
-  z-index: 1;     /* 確保在背景上方 */
-}
-.logo1 {
-  position: fixed;   /* 固定在螢幕 */
-  top: 15px;         /* 離上方 15px */
-  right: 25px;       /* 離右方 15px */
-  width: 700px;      /* 固定大小 */
-  height: auto;      /* 保持比例 */
-  z-index: 2;        /* 保證疊在背景上 */
+
+/* 托盤 + 文字包裝 */
+.tray-wrapper {
+  position: fixed;              /* 固定在螢幕中間 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;           /* 讓底下的文字置中 */
+  z-index: 1;
 }
 
-  
+.tray {
+  width: 900px;                 /* 托盤大小 */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.text {
+  width: 700px;                 /* 文字大小 */
+  height: auto;
+  display: block;
+  margin: 10px auto 0;          /* 與托盤距離 10px，可調整 */
+}
+
+.logo {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  width: 900px;
+  height: auto;
+  z-index: 1;
+}
+
+.logo1 {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  width: 700px;
+  height: auto;
+  z-index: 2;
+}
