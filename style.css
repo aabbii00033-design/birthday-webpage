@@ -55,9 +55,9 @@ body {
 .logo3 {
   position: fixed;
   top: 50%;
-  left: 20%;
-  transform: translate(-450px, 150px);
-  width: 900px;   /* 大小可調 */
+  left: 50%;
+  transform: translate(-450px, 225px);
+  width: 200px;   /* 大小可調 */
   height: auto;
   z-index: 10;
 }
@@ -65,9 +65,9 @@ body {
 .logo4 {
   position: fixed;
   top: 50%;
-  left: 200%;
+  left: 50%;
   transform: translate(-450px, -225px); /* 左上 */
-  width: 900px;
+  width: 200px;
   height: auto;
   z-index: 10;
 }
