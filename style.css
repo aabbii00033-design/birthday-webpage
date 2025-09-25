@@ -56,7 +56,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-250px , 225px);
+  transform: translate(-250px , 175px);
   width: 300px;   /* 大小可調 */
   height: auto;
   z-index: 999;
@@ -66,7 +66,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-250px , 50px); /* 左上 */
+  transform: translate(-250px , -275px); /* 左上 */
   width: 300px;
   height: auto;
   z-index: 999;
