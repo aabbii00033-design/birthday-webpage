@@ -6,7 +6,7 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
+/* 托盤 */
 .tray {
   position: fixed;
   top: 50%;
@@ -16,6 +16,7 @@ body {
   height: auto;
   z-index: 1;
 }
+/* 底下文字 */
 .text {
   position: fixed;
   top: calc(70% + 100px);  /* 托盤中心點往下再移一段距離 */
@@ -25,6 +26,7 @@ body {
   height: auto;
   z-index: 10;
 }
+/* 左上角商標 */
 .logo {
   position: fixed;
   top: 10%;
@@ -42,6 +44,7 @@ body {
   height: auto; /* 保持比例 */ 
   z-index: 2; /* 保證疊在背景上 */ 
 }
+/* 托盤上商標 */
 .logo2 {
   position: fixed;
   top: 15%;
