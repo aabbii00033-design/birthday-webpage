@@ -95,5 +95,15 @@ body {
   height: auto;
   z-index: 999;
 }
+  /* 鬆餅沾醬 */
+.taste {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200px , -925px);
+  width: 400px;
+  height: auto;
+  z-index: 999;
+}
 
 
