@@ -60,7 +60,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-300px , -225px);
+  transform: translate(-400px , -325px);
   width: 1000px;   /* 大小可調 */
   height: auto;
   z-index: 999;
@@ -70,8 +70,8 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-270px , -290px); /* 左上 */
-  width: 1000px;
+  transform: translate(-370px , -320px); /* 左上 */
+  width: 900px;
   height: auto;
   z-index: 999;
 }
@@ -81,7 +81,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-170px, -290px); /* X 往右100，Y不變 */
-  width: 1000px;
+  width: 900px;
   height: auto;
   z-index: 999;
 }
