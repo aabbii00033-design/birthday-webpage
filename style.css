@@ -80,7 +80,17 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-170px, -290px); /* X 往右100，Y不變 */
+  transform: translate(-470px, -290px); /* X 往右100，Y不變 */
+  width: 900px;
+  height: auto;
+  z-index: 999;
+}
+/* 右下蛋糕 */
+.logo6 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-470px , -320px);
   width: 900px;
   height: auto;
   z-index: 999;
