@@ -50,7 +50,7 @@ body {
   position: fixed;
   top: 15%;
   left: 15%;
-  transform: translate(190px, 30px); /* 相對托盤中心偏移 */
+  transform: translate(180px, 15px); /* 相對托盤中心偏移 */
   width: 700px;
   height: auto;
   z-index: 10;
