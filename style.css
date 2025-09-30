@@ -21,10 +21,10 @@ body {
   position: fixed;
   top: 50%;       /* 托盤中心 */
   left: 50%;
-  transform: translate(-50%, 100px);
+  transform: translate(-20%, 100px);
   width: 700px;
   height: auto;
-  z-index: 999;
+  z-index: 1000;
 }
 
 /* 左上角商標 */
@@ -32,7 +32,7 @@ body {
   position: fixed;
   top: 10%;
   left: calc(30% - 250px); /* 往左400px */
-  width: 900px;
+  width: 1000px;
   height: auto;
   z-index: 1;
 }
