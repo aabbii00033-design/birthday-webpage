@@ -24,7 +24,7 @@ body {
   transform: translate(-50%, 100px);
   width: 700px;
   height: auto;
-  z-index: 10;
+  z-index: 999;
 }
 
 /* 左上角商標 */
