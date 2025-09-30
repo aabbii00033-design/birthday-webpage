@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 50%;     
   left: 50%;
-  transform: translate(-10%, 100px); /* 水平置中，往下移 */
+  transform: translate(-350px , 100px);
   width: 700px;   /* 你要的寬度 */
   height: auto;   /* 保持比例 */
   z-index: 1000;
