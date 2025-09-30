@@ -109,7 +109,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-510px , -350px);
+  transform: translate(-500px , -360px);
   width: 1000px;
   height: auto;
   z-index: 999;
