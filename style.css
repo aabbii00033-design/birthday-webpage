@@ -19,11 +19,13 @@ body {
 /* 底下文字 */
 .text {
   position: fixed;
-  top: 50%;       /* 托盤中心 */
+  top: 70%;           /* 比 50% 再往下，確保文字在托盤下方 */
   left: 50%;
-  transform: translate(-20%, 100px);
+  transform: translate(-50%, 0); /* 讓文字水平置中 */
   width: 700px;
-  height: auto;
+  text-align: center; /* 文字置中 */
+  font-size: 24px;    /* 大一點比較明顯 */
+  color: white;       /* 文字顏色 */
   z-index: 1000;
 }
 
