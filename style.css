@@ -21,7 +21,7 @@ body {
   position: fixed;
   top: 50%;       /* 托盤中心 */
   left: 50%;
-  transform: translate(-50%, 300px); /* 往下300px */
+  transform: translate(-50%, 100px);
   width: 700px;
   height: auto;
   z-index: 10;
