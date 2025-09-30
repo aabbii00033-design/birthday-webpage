@@ -75,14 +75,13 @@ body {
   height: auto;
   z-index: 999;
 
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: transform;
+ transition: transform 0.3s ease; /* 平滑動畫 */
+  transform-origin: center center;  /* 放大以中心為基準 */
 }
 
 .logo4:hover {
-  transform: translate(-420px , -320px) scale(1.15); /* 微放大，更流暢 */
+  transform: translate(-420px , -320px) scale(1.15); /* 微放大，更流暢 */  
 }
-
 
 /* 蛋糕 */
 .logo5 {
