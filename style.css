@@ -50,8 +50,8 @@ body {
   position: fixed;
   top: 15%;
   left: 15%;
-  transform: translate(250px, -15px); /* 相對托盤中心偏移 */
-  width: 700px;
+  transform: translate(230px, -15px); /* 相對托盤中心偏移 */
+  width: 800px;
   height: auto;
   z-index: 10;
 }
@@ -60,7 +60,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-450px , -325px);
+  transform: translate(-450px , -300px);
   width: 900px;   /* 大小可調 */
   height: auto;
   z-index: 999;
@@ -90,7 +90,7 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-370px , -300px);
+  transform: translate(-370px , -265px);
   width: 800px;
   height: auto;
   z-index: 999;
@@ -100,8 +100,8 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-100px , -50px);
-  width: 200px;
+  transform: translate(-100px , -75px);
+  width: 500px;
   height: auto;
   z-index: 999;
 }
