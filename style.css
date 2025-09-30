@@ -5,6 +5,8 @@ body {
   background: url("images/background.png") no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
+
+  
 }
 /* 托盤 */
 .tray {
