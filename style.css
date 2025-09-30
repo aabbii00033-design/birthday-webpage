@@ -70,18 +70,19 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-420px , -320px); /* 原本位置 */
+  transform: translate(-420px , -320px);
   width: 850px;
   height: auto;
   z-index: 999;
-  transition: transform 0.3s ease; /* 平滑動畫 */
-  transform-origin: center center;  /* 放大以中心為基準 */
+
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
-/* 滑鼠移到奶昔 */
 .logo4:hover {
-  transform: translate(-420px , -320px) scale(1.2); /* 放大 1.2 倍，可調整比例 */
+  transform: translate(-420px , -320px) scale(1.15); /* 微放大，更流暢 */
 }
+
 
 /* 蛋糕 */
 .logo5 {
